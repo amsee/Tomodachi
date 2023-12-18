@@ -1,0 +1,18 @@
+def tomodachi():
+  greeting = 'Yoroshiku onegaishimasu! watashi wa anata no konpyuta tomodachi desu! :)'
+  print(greeting)
+  
+  name = input('Anata no namae wa nan desu ka?: ')
+  print('Yoroshiku onegaishimasu, ' + name + '-san!')
+
+  fruit_list = ['ichigo', 'orenji', 'meron']
+  
+  favourite_fruit = input('Anata no kudamono wa nanidesu ka? (ichigo, orenji, meron): ')
+  if favourite_fruit in fruit_list:
+    print('Ii desu ne ' + favourite_fruit + ' ga suki desu! :)')
+  
+  else:
+    print('Gomennasai :( sono kudamono wa suki ja arimasen!')
+  
+
+tomodachi()
