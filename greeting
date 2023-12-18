@@ -1,5 +1,5 @@
 def tomodachi():
-  greeting = 'Yoroshiku onegaishimasu! watashi wa anata no konpyuta tomodachi desu! :)'
+  greeting = 'Yoroshiku onegaishimasu! Watashi wa anata no konpyuta tomodachi desu! :)'
   print(greeting)
   
   name = input('Anata no namae wa nan desu ka?: ')
@@ -9,10 +9,23 @@ def tomodachi():
   
   favourite_fruit = input('Anata no kudamono wa nanidesu ka? (ichigo, orenji, meron): ')
   if favourite_fruit in fruit_list:
-    print('Ii desu ne ' + favourite_fruit + ' ga suki desu! :)')
-  
+    print('Ii desu ne, ' + favourite_fruit + ' ga suki desu! :)')
   else:
     print('Gomennasai :( sono kudamono wa suki ja arimasen!')
-  
 
+  dish_list = [
+    'sashimi',
+    'miso soup',
+    'udon',
+    'gyudon']  
+
+  favourite_dish = input('Anata no sukina nihon ryori nanidesu ka? (sashimi, miso soup, udon, gyudon): ')
+  if favourite_dish in dish_list:
+    print('Ii desu ne, ' + favourite_dish + ' ga suki desu! :)')
+  else:
+    print('Gomennasai :( sono sukina nihon wa suki ja arimasen!')
+
+  age = input('Anata wa nan-sai desu ka? (0 - 99): ')
+  print(age + '?! ' + "yabai!!")
+      
 tomodachi()
